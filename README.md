@@ -11,6 +11,7 @@ Nëse vegla vërenë të paktën një dobësi, do të lajmërojë që faqja e sk
  * NodeJS
  * Express
  
+![image](https://user-images.githubusercontent.com/61945677/148642824-74de7626-aa86-4793-9556-4f5af0a0467d.png)
 
  
 ### Instalimi
