@@ -18,11 +18,11 @@ Nëse vegla vërenë të paktën një dobësi, do të lajmërojë që faqja e sk
 
 Klono repon:
 ```
-git clone https://github.com/arbreshazeqiri/IntSec21-22.git
+git clone https://github.com/arbreshazeqiri/IntSec21-22_Gr24.git
 ```
 Hyni në follderin e shkarkuar:
 ```
-cd IntSec21-22
+cd IntSec21-22_Gr24
 ```
 Instalo varshmëritë:
 ```
@@ -32,7 +32,7 @@ Ekzekuto aplikacionin:
 ```
 npm start
 ```
-Open the browser at http://localhost:4000/
+Hap shfletuesin në http://localhost:4000/
 
 
 ###### Project forked and modified for education purposes from: https://github.com/MariaGarber/XSS-Scanner.git
