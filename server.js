@@ -21,12 +21,12 @@ app.get('/scanner', async (req, res) => {
 });
 
 const MALICIOUS_SCRIPT = [
-  '<script>alert("xss")</script>'//,
-  // '<image src=1 href=1 onerror="javascript:alert(1)"></image>',
-  // "')%3Balert(1)%3Bvar b=('",
-  // '<iframe onReadyStateChange iframe onReadyStateChange="javascript:javascript:alert(1)"></iframe onReadyStateChange>',
-  // '<html onMouseOut html onMouseOut="javascript:javascript:alert(1)"></html onMouseOut>',
-  // '<img src="http://inexist.ent" onerror="javascript:alert(1)"/>',
+  '<script>alert("xss")</script>',
+  '<image src=1 href=1 onerror="javascript:alert(1)"></image>',
+  "')%3Balert(1)%3Bvar b=('",
+  '<iframe onReadyStateChange iframe onReadyStateChange="javascript:javascript:alert(1)"></iframe onReadyStateChange>',
+  '<html onMouseOut html onMouseOut="javascript:javascript:alert(1)"></html onMouseOut>',
+  '<img src="http://inexist.ent" onerror="javascript:alert(1)"/>',
 ];
 
 async function check_xss(url) {

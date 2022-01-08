@@ -36,3 +36,6 @@ Run the application:
 npm start
 ```
 Open the browser at http://localhost:4000/
+
+
+###### Project forked and modified for education purposes from: https://github.com/MariaGarber/XSS-Scanner.git
