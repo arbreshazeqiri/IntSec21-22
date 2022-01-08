@@ -1,37 +1,33 @@
-# XSS Scanner
+# XSS Skenues
 
-Cross-Site Scripting (XSS) is one of the most well known web application vulnerabilities. It even has a dedicated chapter in the OWASP Top 10 project and it is a highly chased vulnerability in bug bounty programs.
+Dy hapat kryesor:
+1. Gjetja e objektivit:Vegla mundohet të identifikojë të gjitha parametrat e injektueshëm në forma, URLs, headers, etj.
+2. Testimi për XSS: Për secilin parametër, skenuesi përpiqet të detektojë nëse është i rrezikuar nga Cross-Site Scripting. Vegla injekton kod të shkruar në JavaScript, duke përfshirë disa karaktere të veçanta HTML (>, <, ", ') dhe do të mundohet të shohë nëse përgjigja kthehet e pasanitizuar.
+Nëse vegla vërenë të paktën një dobësi, do të lajmërojë që faqja e skenuar është jo e sigurtë (ndaj XSS).
 
-The scanner gets a link from the user and scan the website for XSS vulnerability by injecting malicious scripts at the input place. The injection happens in headless browser named Chromium and controlled by Puppeteer automation.
-
-It works in two steps:
-1. Find the target: In this first step, the tool tries to identify all the places at the page including injectable parameters in forms, URLs, headers, etc.
-2. Test for XSS: For each place discovered in the previous step, the scanner will try to detect if the parameters are vulnerable to Cross-Site Scripting. The tool injects a piece of JavaScript code, including some special HTML characters (>, <, ", ') and it will try to see if they are returned in the response page without sanitization.
-If the tool detects at least one vulnerability, it will return that the website have XSS vulnerability.
-
-### Technologies
+## Teknologjitë
  * Puppeteer
  * Javascript
  * NodeJS
  * Express
  
- ![](public/pictures/xss_scanner.png)
- 
-### How to install
 
-Clone the repository:
+ 
+### Instalimi
+
+Klono repon:
 ```
-git clone https://github.com/MariaGarber/XSS-Scanner.git
+git clone https://github.com/arbreshazeqiri/IntSec21-22.git
 ```
-Enter the clonned folder:
+Hyni në follderin e shkarkuar:
 ```
-cd XSS-Scanner
+cd IntSec21-22
 ```
-Install the dependencies:
+Instalo varshmëritë:
 ```
 npm install
 ```
-Run the application:
+Ekzekuto aplikacionin:
 ```
 npm start
 ```
